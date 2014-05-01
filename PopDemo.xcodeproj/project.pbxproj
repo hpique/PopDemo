@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1DB42BC07437474CA6F42060 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 49C6D6757C064A9A889D39A2 /* libPods.a */; };
-		8713FC80191183AD0072C3C0 /* HPSpringConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FC7F191183AD0072C3C0 /* HPSpringConfigViewController.m */; };
+		8713FC80191183AD0072C3C0 /* HPAnimationConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FC7F191183AD0072C3C0 /* HPAnimationConfigViewController.m */; };
 		8713FC8619118F020072C3C0 /* HPPropertyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FC8519118F020072C3C0 /* HPPropertyCell.m */; };
 		8713FC8919118FF40072C3C0 /* Lyt.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FC8819118FF40072C3C0 /* Lyt.m */; };
 		8713FC8D1911907C0072C3C0 /* HPSliderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8713FC8C1911907C0072C3C0 /* HPSliderCell.m */; };
@@ -28,8 +28,8 @@
 /* Begin PBXFileReference section */
 		49C6D6757C064A9A889D39A2 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE7B5ADFE0444FA98017C13 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
-		8713FC7E191183AD0072C3C0 /* HPSpringConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPSpringConfigViewController.h; sourceTree = "<group>"; };
-		8713FC7F191183AD0072C3C0 /* HPSpringConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPSpringConfigViewController.m; sourceTree = "<group>"; };
+		8713FC7E191183AD0072C3C0 /* HPAnimationConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPAnimationConfigViewController.h; sourceTree = "<group>"; };
+		8713FC7F191183AD0072C3C0 /* HPAnimationConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPAnimationConfigViewController.m; sourceTree = "<group>"; };
 		8713FC8419118F020072C3C0 /* HPPropertyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPPropertyCell.h; sourceTree = "<group>"; };
 		8713FC8519118F020072C3C0 /* HPPropertyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPPropertyCell.m; sourceTree = "<group>"; };
 		8713FC8719118FF40072C3C0 /* Lyt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lyt.h; sourceTree = "<group>"; };
@@ -127,8 +127,8 @@
 				877CD01A191180A200D60F8C /* HPDetailViewController.m */,
 				877CD01C191180A200D60F8C /* Images.xcassets */,
 				877CD008191180A200D60F8C /* Supporting Files */,
-				8713FC7E191183AD0072C3C0 /* HPSpringConfigViewController.h */,
-				8713FC7F191183AD0072C3C0 /* HPSpringConfigViewController.m */,
+				8713FC7E191183AD0072C3C0 /* HPAnimationConfigViewController.h */,
+				8713FC7F191183AD0072C3C0 /* HPAnimationConfigViewController.m */,
 			);
 			path = PopDemo;
 			sourceTree = "<group>";
@@ -250,7 +250,7 @@
 				877CD012191180A200D60F8C /* HPAppDelegate.m in Sources */,
 				8713FC8919118FF40072C3C0 /* Lyt.m in Sources */,
 				877CD01B191180A200D60F8C /* HPDetailViewController.m in Sources */,
-				8713FC80191183AD0072C3C0 /* HPSpringConfigViewController.m in Sources */,
+				8713FC80191183AD0072C3C0 /* HPAnimationConfigViewController.m in Sources */,
 				877CD018191180A200D60F8C /* HPMasterViewController.m in Sources */,
 				8713FC8D1911907C0072C3C0 /* HPSliderCell.m in Sources */,
 				8713FC8619118F020072C3C0 /* HPPropertyCell.m in Sources */,

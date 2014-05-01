@@ -10,12 +10,10 @@
 
 @interface HPDetailViewController : UIViewController <UISplitViewControllerDelegate>
 
-@property (readonly, nonatomic) id animation;
+@property (strong, nonatomic) id animation;
 
-#pragma mark Spring Animation
+@property (weak, nonatomic) IBOutlet UIView *animationView;
 
-@property (assign, nonatomic) CGFloat springBounciness;
-
-@property (assign, nonatomic) CGFloat springSpeed;
+- (void)animate;
 
 @end

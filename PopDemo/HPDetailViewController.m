@@ -11,7 +11,6 @@
 
 @interface HPDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
-@property (weak, nonatomic) IBOutlet UIView *animationView;
 @end
 
 @implementation HPDetailViewController
@@ -21,7 +20,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self animate];
 }
 
 #pragma mark - Split view
@@ -40,39 +38,19 @@
     self.masterPopoverController = nil;
 }
 
-#pragma mark Spring
+#pragma mark Properties
+
+- (void)setAnimation:(id)animation
+{
+    _animation = animation;
+    ((POPAnimation*)_animation).delegate = self;
+}
+
+#pragma mark Public
 
 - (void)animate
 {
-    if (![_animation isKindOfClass:POPSpringAnimation.class])
-    {
-        POPSpringAnimation *springAnimation = [POPSpringAnimation animationWithPropertyNamed:kPOPViewBounds];
-        CGRect toRect = CGRectApplyAffineTransform(self.animationView.bounds, CGAffineTransformMakeScale(2, 2));
-        springAnimation.toValue = [NSValue valueWithCGRect:toRect];
-        _animation = springAnimation;
-    }
-    ((POPAnimation*)_animation).delegate = self;
     [self.animationView pop_addAnimation:_animation forKey:@"animation"];
-}
-
-- (void)setSpringBounciness:(CGFloat)springBounciness
-{
-    _springBounciness = springBounciness;
-    if ([_animation isKindOfClass:POPSpringAnimation.class])
-    {
-        POPSpringAnimation *springAnimation = (POPSpringAnimation*)_animation;
-        springAnimation.springBounciness = self.springBounciness;
-    }
-}
-
-- (void)setSpringSpeed:(CGFloat)springSpeed
-{
-    _springSpeed = springSpeed;
-    if ([_animation isKindOfClass:POPSpringAnimation.class])
-    {
-        POPSpringAnimation *springAnimation = (POPSpringAnimation*)_animation;
-        springAnimation.springSpeed = self.springSpeed;
-    }
 }
 
 #pragma mark POPAnimationDelegate

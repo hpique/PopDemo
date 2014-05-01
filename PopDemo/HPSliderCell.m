@@ -28,6 +28,8 @@
     
     _slider = [UISlider new];
     _slider.translatesAutoresizingMaskIntoConstraints = NO;
+    _slider.minimumValue = CGFLOAT_MIN; // Allows to set value before minimumValue
+    _slider.maximumValue = CGFLOAT_MAX; // Allows to set value before maximumValue
     [_slider addTarget:self action:@selector(sliderValueChanged:) forControlEvents:UIControlEventValueChanged];
     [self.contentView addSubview:_slider];
     

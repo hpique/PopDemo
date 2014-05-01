@@ -2,29 +2,44 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>decay</key>
+	<array>
+		<dict>
+			<key>property</key>
+			<string>Deceleration</string>
+			<key>minimumValue</key>
+			<integer>0</integer>
+			<key>maximumValue</key>
+			<integer>1</integer>
+			<key>value</key>
+			<real>0.998</real>
+			<key>binding</key>
+			<string>deceleration</string>
+		</dict>
+	</array>
 	<key>spring</key>
 	<array>
 		<dict>
 			<key>property</key>
 			<string>Bounciness</string>
-			<key>value</key>
-			<integer>4</integer>
 			<key>minimumValue</key>
 			<integer>0</integer>
 			<key>maximumValue</key>
 			<integer>20</integer>
+			<key>value</key>
+			<integer>4</integer>
 			<key>binding</key>
 			<string>springBounciness</string>
 		</dict>
 		<dict>
 			<key>property</key>
 			<string>Speed</string>
-			<key>value</key>
-			<integer>12</integer>
 			<key>minimumValue</key>
 			<integer>0</integer>
 			<key>maximumValue</key>
 			<integer>20</integer>
+			<key>value</key>
+			<integer>12</integer>
 			<key>binding</key>
 			<string>springSpeed</string>
 		</dict>

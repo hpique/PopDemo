@@ -1,5 +1,5 @@
 //
-//  HPSpringConfigViewController.h
+//  HPAnimationConfigViewController.h
 //  PopDemo
 //
 //  Created by Hermés Piqué on 30/04/14.
@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "HPSliderCell.h"
 
-@interface HPSpringConfigViewController : UITableViewController
+@interface HPAnimationConfigViewController : UITableViewController
+
+@property (copy, nonatomic) NSString *configKey;
 
 @end
