@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>spring</key>
+	<array>
+		<dict>
+			<key>property</key>
+			<string>Bounciness</string>
+			<key>value</key>
+			<integer>4</integer>
+			<key>minimumValue</key>
+			<integer>0</integer>
+			<key>maximumValue</key>
+			<integer>20</integer>
+			<key>binding</key>
+			<string>springBounciness</string>
+		</dict>
+		<dict>
+			<key>property</key>
+			<string>Speed</string>
+			<key>value</key>
+			<integer>12</integer>
+			<key>minimumValue</key>
+			<integer>0</integer>
+			<key>maximumValue</key>
+			<integer>20</integer>
+			<key>binding</key>
+			<string>springSpeed</string>
+		</dict>
+	</array>
+</dict>
+</plist>
